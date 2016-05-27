@@ -1,5 +1,25 @@
-// Magnethalter für Velo Bling-Bling
-////////////////////////////////////
+//  @brief
+//      Velo Bling-Bling Magnet Mount
+//
+//  @file
+//      magnet.scad
+//  @author
+//      Peter Schmid, peter@spyr.ch
+//  @date
+//      2016-05-27
+//  @remark
+//      Language: OpenSCAD
+//  @version
+//      2.1
+//  @copyright
+//      Peter Schmid, Zurich Switzerland
+//
+// 		This work (mechanical frame design) is licensed under a Creative Commons
+//		Attribution-ShareAlike 4.0 International Public License. To view a copy
+//		of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+//		or send a letter to Creative Commons, 171 Second Street, Suite 300,
+//		San Francisco, California, 94105, USA.
+////////////////////////////////////////////////////////////////////////////////
 
 // $fn=48;
 
@@ -32,7 +52,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -44,7 +64,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -55,7 +75,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -66,7 +86,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -77,7 +97,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -88,7 +108,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -99,7 +119,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -110,7 +130,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -121,7 +141,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -132,7 +152,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -143,7 +163,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 
@@ -154,7 +174,7 @@ difference() {
 	// Wanne
 	translate([0, 0, -magnet_thickness/2])
 		cube([wanne_length, wanne_width, wanne_thickness], true);
-		
+
 	// Magnet
 	cube([magnet_length, magnet_width, magnet_thickness], true);
 

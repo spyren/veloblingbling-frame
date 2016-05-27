@@ -1,6 +1,26 @@
-// Batteriebefestigung für Velo Bling-Bling
-// 1500 mAh, Model SLPB603870H
-///////////////////////////////////////////
+//  @brief
+//      Velo Bling-Bling Battery Mounting Frame.
+//		Kokam 1500 mAh, Model SLPB603870H
+//
+//  @file
+//      bat-l.scad
+//  @author
+//      Peter Schmid, peter@spyr.ch
+//  @date
+//      2016-05-27
+//  @remark
+//      Language: OpenSCAD
+//  @version
+//      2.1
+//  @copyright
+//      Peter Schmid, Zurich Switzerland
+//
+// 		This work (mechanical frame design) is licensed under a Creative Commons
+//		Attribution-ShareAlike 4.0 International Public License. To view a copy
+//		of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+//		or send a letter to Creative Commons, 171 Second Street, Suite 300,
+//		San Francisco, California, 94105, USA.
+////////////////////////////////////////////////////////////////////////////////
 
 // $fn=48;
 
@@ -34,11 +54,11 @@ strip_width = 2;
 // Unterteil, Batterie-Wanne
 difference() {
 	union() {
-				
+
 		// Boden
 		translate([bat_length/2, bat_width/2, -support_thickness/2])
 				cube([wall_length, wall_width, support_thickness], true);
-		
+
 		// Seitenwand
 		translate([bat_length/2, bat_width/2, bat_thickness/2])
 			difference() {
@@ -50,7 +70,7 @@ difference() {
 	}
 
    // Nute für Speiche
-	translate([bat_length/2, bat_width/2, -support_thickness+0.2])	
+	translate([bat_length/2, bat_width/2, -support_thickness+0.2])
 	   cube([wall_length, 2.5, 0.6], true);
 
 	// 1. Steg
@@ -126,13 +146,13 @@ translate([0, 0, -4]) {
 			// 1. Steg
 			translate([-support_width, -wall_thickness, -support_thickness])
 				cube([support_width, wall_width, 2*support_thickness]);
-		
+
 			// 2. Steg
 			translate([bat_length, -wall_thickness, -support_thickness])
 				cube([support_width, wall_width, 2*support_thickness]);
 		}
 
-		// 1. Steg 
+		// 1. Steg
 		// 1. Loch
 		translate([-support_width/2, 3.5-wall_thickness, -support_thickness])
 			cylinder(h=20, r=schraubenloch, center=true, $fn=48);
@@ -159,9 +179,9 @@ translate([0, 0, -4]) {
 		// 4. Loch
 		translate([bat_length+support_width/2, wall_width-wall_thickness-3.5, -support_thickness])
 			cylinder(h=20, r=schraubenloch, center=true, $fn=48);
-	
+
 	   // Nute für Speiche
-		translate([bat_length/2, bat_width/2, support_thickness-0.2])	
+		translate([bat_length/2, bat_width/2, support_thickness-0.2])
 		   cube([wall_length, 2.5, 0.6], true);
 
 	}
@@ -174,7 +194,7 @@ union() {
 		cube([3, wall_thickness, 5]);
 	translate([-support_width, bat_width, -4])
 		cube([3, wall_thickness, 5]);
-	
+
 	translate([bat_length+support_width-3, -wall_thickness, -4])
 		cube([3, wall_thickness, 5]);
 	translate([bat_length+support_width-3, bat_width, -4])
