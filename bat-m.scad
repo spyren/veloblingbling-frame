@@ -144,6 +144,9 @@ difference() {
 	rotate([180, 0, 0])
 		translate([5, -12, wall_thickness-0.5])
 			write("velo bling bling.ch",h=4,t=0.5);
+	rotate([180, 0, 0])
+		translate([5, -25, wall_thickness-0.5])
+			write("bat-m v1.1",h=4,t=0.5);
 
 	// Beschfiftung vorne
 	translate([1, 25, -0.5])

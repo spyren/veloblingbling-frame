@@ -46,6 +46,8 @@ schraubenkopf = 5/2;
 
 strip_width = 2;
 
+// libs
+use <Write.scad>
 
 // Batterie
 	*color( [1, 0, 0, 1] )
@@ -133,6 +135,23 @@ difference() {
 	translate([0, support_length/2, wall_height/2+0.7])
 		rotate([0,90,0])
 			cylinder(h=20, r=2/2, center=true, $fn=48);
+
+	// Beschriftung hinten
+	rotate([180, 0, 0])
+		translate([5, -7, wall_thickness-0.5])
+			write("(C) Peter Schmid",h=4,t=0.5);
+	rotate([180, 0, 0])
+		translate([5, -14, wall_thickness-0.5])
+			write("velo bling bling.ch",h=4,t=0.5);
+	rotate([180, 0, 0])
+		translate([5, -30, wall_thickness-0.5])
+			write("bat-l v1.1",h=4,t=0.5);
+
+	// Beschfiftung vorne
+	translate([5, 25, -0.5])
+		write("LiPol Battery 3.7 V",h=4,t=0.5);
+	translate([5, 15, -0.5])
+		write("e.g. Kokam SLB603870H",h=4,t=0.5);
 
 }
 
